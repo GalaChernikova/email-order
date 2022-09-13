@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Order</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+
+        @media screen and (max-width: 650px) {
+            .greeting,
+            .greeting .line img,
+            .order,
+            .order .details div {
+                width: 500px !important;
+            }
+
+            .order .line,
+            .order .details,
+            .order .products,
+            .order .payment,
+            .order .shipping,
+            .order .button,
+            .order .button .view,
+            .contacts {
+                width: 460px !important;
+            }
+
+            .greet-text img {
+                width: 280px;
+            }
+
+        }
+
+        @media screen and (max-width: 550px) {
+            .greeting,
+            .order,
+            .greeting .line img {
+                width: 400px !important;
+            }
+
+            .greet-text  div,
+            .order .details div,
+            .order .products div,
+            .order .products h4 {
+                width: 380px !important;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            .order .line,
+            .order .details,
+            .order .products,
+            .order .payment,
+            .order .shipping,
+            .order .button,
+            .order .button .view,
+            .contacts {
+                width: 340px !important;
+            }
+
+            .order .products div .prod {
+                display: block !important;
+                
+            }
+
+            .order .products div .prod .prod-info {
+                margin: 0 !important;
+                padding-top: 10px !important;
+                padding-bottom: 20px !important;
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+            .logo,
+            .social {
+                padding: 40px 10px !important;
+            }
+
+            .greeting,
+            .greeting .line img,           
+            .order  {
+                width: 300px !important;
+            }
+
+            .greet-text div,
+            .order .details div,
+            .order .products div,
+            .order .products h4 {
+                width: 280px !important;
+            }
+
+            .order .line,
+            .order .products .prod-info,
+            .order .details,
+            .order .products,
+            .order .payment,
+            .order .shipping,
+            .order .button,
+            .order .button .view,
+            .contacts {
+                width: 260px !important;
+            }
+        }
+
+        /* .header,
+        .greeting,
+        .order,
+        .details,
+        .products,
+        .payment,
+        .shipping,
+        .button,
+        .contacts 
+        {
+            display: none;
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="wrapper" style="max-width: 640px; width: 100%; 
+    margin-right: auto; margin-left: auto; border: 1px solid #F8FAFC">
+
+        <div class="header" style="max-width: 640px; width: 100%; 
+        display: -webkit-inline-box;">
+            <div class="logo" style="padding: 40px;">
+                <a href="#"><img src="./images/logo.png" alt="logo"></a>
+            </div>
+
+            <div class="social" style="margin-left: auto; padding: 40px;">
+                <a href="#" style="padding: 10px;"><img src="./images/tw.png" alt="tw"></a>
+                <a href="#" style="padding: 10px;"><img src="./images/fb.png" alt="fb"></a>
+                <a href="#" style="padding: 10px;"><img src="./images/ig.png" alt="ig"></a>
+            </div>
+        </div>
+
+        <div class="main" style="background-color: #F8FAFC; padding-top: 55px;
+        max-width: 640px; width: 100%; ">
+
+            <div class="greeting" style="max-width: 544px; width: 100%; 
+            margin-right: auto; margin-left: auto; text-align: center;
+            background-color: #FFFFFF; margin-bottom: 30px;">
+                <div class="line">
+                    <img src="./images/line.png" alt="line"
+                    style="margin-bottom: 20px;">
+                </div>
+
+                <div class="greet-text">
+                    <img src="./images/mainpic.png" alt="mainpic">
+
+                    <div>
+                        <h2 style="margin-top: 30px; margin-bottom: 15px; font-weight: 600;
+                        font-size: 24px; line-height: 140%; color: #384860;">
+                            Thank you for the order!</h2>
+
+                        <p style="max-width: 420px; width: 100%; margin-right: auto; margin-left: auto;
+                        padding-bottom: 55px; font-weight: 400; font-size: 16px; line-height: 150%; color: #384860;">
+                            Hi Angela! Thanks for shopping with us. 
+                            We’ve received your order No. 13428. 
+                            We will notify you when we send it.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="order" style="max-width: 544px; width: 100%; 
+            margin-right: auto; margin-left: auto;  background-color: #FFFFFF;">
+            
+                <div class="details" style="padding: 40px 25px; max-width: 544px; width: 100%;">
+                    <div style=" max-width: 480px; width: 100%;">
+                        <h3 style="font-weight: 700; font-size: 16px; 
+                        line-height: 24px; letter-spacing: 0.2px; color: #121A26;
+                        margin-bottom: 15px;">
+                        Order details</h3>
+
+                        <p style="font-weight: 400; font-size: 16px;
+                        line-height: 24px; letter-spacing: 0.2px; color: #384860;">
+                            No. Invoice: 
+                        <a href="#" style="color: #2969FF;">INV/20220403/NTL/75686059</a></p> 
+                    </div>
+ 
+                </div>
+
+                    <img class="line" src="./images/greyline.png" alt="greyline" style="display: block;
+                    margin-right: auto; margin-left: auto;">
+
+                <div class="products" style="padding: 40px 25px; max-width: 544px; width: 100%;">
+                    <h4 style="font-weight: 700; font-size: 16px;
+                    line-height: 24px; letter-spacing: 0.2px; color: #94A3B8;
+                    margin-bottom: 25px;">
+                        Product Ordered</h4>
+
+                    <div style="max-width: 480px; width: 100%;">
+                        <div class="prod" style="display: -webkit-inline-box; 
+                        margin-bottom: 20px;">
+                            <img src="./images/product-1.png" alt="prod-1">
+
+                            <div class="prod-info" style="max-width: 300px; width: 100%;
+                            margin-left: 30px;">
+                                <h3 style="font-weight: 700; font-size: 18px;
+                                line-height: 24px; color: #384860;">
+                                    Premium Hoodie</h3>
+                                <p style="font-weight: 700; font-size: 18px;
+                                line-height: 24px; color: #2969FF;">
+                                    $56.00</p>
+                                <p style="font-weight: 400; font-size: 14px;
+                                line-height: 24px; letter-spacing: 0.2px; color: #94A3B8;">
+                                    Loose-fitting hoodie with short sleeves. 
+                                    Front pouch pocket. Elastic adjustable hem. 
+                                    Ribbed trims.</p>
+                                <br>
+                                <p style="font-weight: 400; font-size: 14px;
+                                line-height: 24px; letter-spacing: 0.2px; color: #94A3B8;">
+                                    Quantity : 1</p>
+                                <p style="font-weight: 400; font-size: 14px;
+                                line-height: 24px; letter-spacing: 0.2px; color: #94A3B8;">
+                                    Color : Pink</p>
+                            </div>
+
+                        </div>
+
+                        <div class="prod" style="display: -webkit-inline-box;">
+                            <img src="./images/product-2.png" alt="prod-2">
+
+                            <div class="prod-info"  style="max-width: 300px; width: 100%;
+                            margin-left: 30px;">
+                                <h3 style="font-weight: 700; font-size: 18px;
+                                line-height: 24px; color: #384860;">
+                                    Premium Hoodie</h3>
+                                <p style="font-weight: 700; font-size: 18px;
+                                line-height: 24px; color: #2969FF;">
+                                    $56.00</p>
+                                <p style="font-weight: 400; font-size: 14px;
+                                line-height: 24px; letter-spacing: 0.2px; color: #94A3B8;">
+                                    Loose-fitting hoodie with short sleeves. 
+                                    Front pouch pocket. Elastic adjustable hem. 
+                                    Ribbed trims.</p>
+                                <br>
+                                <p style="font-weight: 400; font-size: 14px;
+                                line-height: 24px; letter-spacing: 0.2px; color: #94A3B8;">
+                                    Quantity : 1</p>
+                                <p style="font-weight: 400; font-size: 14px;
+                                line-height: 24px; letter-spacing: 0.2px; color: #94A3B8;">
+                                    Color : Lime</p>
+                            </div>
+                        </div> 
+
+
+
+
+                    </div>
+
+
+                </div>
+
+                    <img class="line" src="./images/greyline.png" alt="greyline" style="display: block;
+                    margin-right: auto; margin-left: auto;">
+
+                <div class="payment" style="padding: 40px 25px; max-width: 544px; width: 100%;">
+                    <div style="max-width: 480px; width: 100%; display: -webkit-inline-box;">
+                        <div class="payment-info" style="font-weight: 400; font-size: 16px;
+                        line-height: 24px; letter-spacing: 0.2px; color: #384860;">
+                            <p style="padding-bottom: 20px;">Payment method</p>
+                            <p style="padding-bottom: 20px;">Subtotal</p>
+                            <p style="padding-bottom: 20px;">Shipping</p>
+                            <p style="padding-bottom: 20px;">Tax</p>
+                            <h2 style="font-weight: 700; font-size: 24px;
+                            line-height: 34px; color: #384860;">
+                                Total</h2>
+                        </div>
+
+                        <div class="price"  style="font-weight: 400; font-size: 16px;
+                        line-height: 24px; letter-spacing: 0.2px; color: #384860; margin-left: auto;">
+                            <p style="padding-bottom: 20px;">Mastercard - 0987</p>
+                            <p style="padding-bottom: 20px;">$112.00</p>
+                            <p style="padding-bottom: 20px;">$10</p>
+                            <p style="padding-bottom: 20px;">$5</p>
+                            <h2  style="font-weight: 700; font-size: 24px;
+                            line-height: 34px; color: #384860;">
+                                $127.00</h2>
+                        </div>  
+
+
+
+                    </div>
+
+  
+                </div>
+
+                    <img class="line" src="./images/greyline.png" alt="greyline" style="display: block;
+                    margin-right: auto; margin-left: auto;">
+
+                <div class="shipping" style="padding: 40px 25px; max-width: 544px; width: 100%;">
+                    <div style=" max-width: 480px; width: 100%;">
+                        <h4 style="font-weight: 700; font-size: 16px;
+                        line-height: 24px; letter-spacing: 0.2px; color: #94A3B8;
+                        margin-bottom: 20px;">
+                            Shipping address</h4>
+
+                        <p style="font-weight: 400; font-size: 16px;
+                        line-height: 24px; letter-spacing: 0.2px; color: #384860;">
+                            Aero Engine Controls, 5000 Solihull Parkway, 
+                            Birmingham Business Park, B37 7YP</p> 
+                    </div>
+                </div>
+
+                    <img class="line" src="./images/greyline.png" alt="greyline" style="display: block;
+                    margin-right: auto; margin-left: auto;">
+
+                <div class="button" style="padding: 40px 20px;  max-width: 544px; width: 100%;
+                text-align: center;">
+                    <div class="view" style=" background-color: #2969FF; padding: 20px 0; max-width: 480px; width: 100%;">
+                        <a href="#" style="text-decoration: none; color: #FFFFFF;">
+                            View Order</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contacts" style="max-width: 544px; width: 100%; 
+            margin-right: auto; margin-left: auto; margin-top: 55px; padding-bottom: 55px;
+            font-weight: 400; font-size: 16px; line-height: 150%; 
+            letter-spacing: 0.2px; color: #202B3C;">
+                <p style="margin-bottom: 30px">This email was sent to 
+                    <a href="#" style="color: #2969FF;">angel@notable.com.</a>  
+                    If you'd rather not receive this kind of email, 
+                    Don’t want any more emails from Notable? 
+                    <a href="#" style="color: #2969FF;">Unsubscribe.</a> 
+                </p>
+                <p>
+                    100 Smith Street, Melbourne VIC 3000
+                    © 2022 Notable
+                </p>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
